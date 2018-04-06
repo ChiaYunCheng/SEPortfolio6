@@ -52,4 +52,8 @@ namespace Con_Util
 			return false;
 		}
 	}
+	
+	string Constructor_Util::getReport(){
+		return constructorReport;
+	}
 }
