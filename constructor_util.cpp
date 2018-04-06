@@ -42,7 +42,7 @@ namespace Con_Util
 	bool Constructor_Util::checkFor(const string & source, const string & elementName){
 		if !(XML_Parser::elementExists(source, elementName))
 		{
-			oss << endl << "no " << elementName << " tag";
+			oss << endl << "there is no " << elementName << " tag";
 			constructorReport = oss.str();
 			constructorSucceeded = false;
 			return false;
