@@ -59,6 +59,9 @@ namespace Con_Util
 	
 	void Constructor_Util::testFunction(){
 		std::cout << "Function called" << std::endl;
+
+	string Constructor_Util::getReport(){
+		return constructorReport;
 	}
 }
 
