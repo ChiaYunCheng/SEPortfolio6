@@ -52,4 +52,8 @@ namespace Con_Util
 			return false;
 		}
 	}
+	
+	bool Constructor_Util::isConstructed(){
+		return constructorSucceeded;
+	}
 }
