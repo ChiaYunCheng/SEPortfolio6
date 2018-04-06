@@ -56,13 +56,5 @@ namespace Con_Util
 	string Constructor_Util::getReport(){
 		return constructorReport;
 	}
-
-	bool Constructor_Util::isConstructed(){
-		return constructorSucceeded;
-	}
-	
-	void Constructor_Util::testFunction(){
-		std::cout << "Function called" << std::endl;
-	}
 }
 
