@@ -40,16 +40,16 @@ namespace Con_Util
 	 *  Enhancement of XML_Parser::elementExists, automatically logs missing elements when checked.
 	 */
 	bool Constructor_Util::checkFor(const string & source, const string & elementName){
-		if (XML_Parser::elementExists(source, elementName))
-		{
-			return true;
-		}
-		else
+		if !(XML_Parser::elementExists(source, elementName))
 		{
 			oss << endl << "no " << elementName << " tag";
 			constructorReport = oss.str();
 			constructorSucceeded = false;
 			return false;
+		}
+		else
+		{
+			return true;
 		}
 	}
 }
