@@ -60,5 +60,9 @@ namespace Con_Util
 	bool Constructor_Util::isConstructed(){
 		return constructorSucceeded;
 	}
+	
+	void Constructor_Util::testFunction(){
+		std::cout << "Function called" << std::endl;
+	}
 }
 
